@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <meta name="apple-mobile-web-app-capable" content="yes" />-->
+    <title>Simple Calc</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <script src="js/script.js"></script> 
+</head>
+<body>
+    <div class="wrapper">
+        <div class="maincontent">
+            <div class="container">
+                <main class='page'>
+                    <div class="container">
+                        <div class="page_left">
+                            <div class="calc-wrapper">
+                                <div class="calc">
+                                    <div class="page_display">
+                                        <input type="text" id="display" name="" class="calc_display-input" placeholder="00000000000000">
+                                    </div>
+                                    <div class="calc_buttons">
+                                        <table class="calc_table">
+                                            <tr class="calc_buttons-row">
+                                                <td>
+                                                    <button type="button" class="btn btn_default btn_hover_red">ce</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn_default btn_hover_red">c</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn_default btn_hover_blue">/</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn_default btn_hover_blue">*</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="calc_buttons-row">
+                                                <td>
+                                                    <button type="button" class="btn btn_default ">7</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn_default ">8</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn_default ">9</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn_default btn_hover_blue">-</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="calc_buttons-row">
+                                                <td>
+                                                    <button type="button" class="btn btn_default ">4</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button"class="btn btn_default ">5</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn_default ">6</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn_default btn_hover_blue">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="calc_buttons-row">
+                                                <td>
+                                                    <button type="button" class="btn btn_default ">1</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn_default ">2</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn_default ">3</button>
+                                                </td>
+                                                <td rowspan="2">
+                                                    <button type="button" id="equal" class="btn btn_default btn_hover_blue">=</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="calc_buttons-row">
+                                                <td colspan="2">
+                                                    <button type="button" id="n0" class="btn btn_default btn_long">0</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn_default ">.</button>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page_right">
+                            <h1 class="title">
+                                Простой калькулятор
+                            </h1>
+                            <div class="about">
+                                <div class="about_btn">
+                                    <a href="#" class="about_btn-link">
+                                    Как это работает?
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
