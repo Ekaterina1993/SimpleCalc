@@ -10,6 +10,7 @@
     <link href="/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <script src="js/script.js"></script> 
+    
 </head>
 <body>
     <div class="wrapper">
@@ -21,72 +22,72 @@
                             <div class="calc-wrapper">
                                 <div class="calc">
                                     <div class="page_display">
-                                        <input type="text" id="display" name="" class="calc_display-input" placeholder="00000000000000">
+                                        <input disabled type="text" value="0" id="display" class="calc_display-input" placeholder="00000000000000">
                                     </div>
                                     <div class="calc_buttons">
                                         <table class="calc_table">
                                             <tr class="calc_buttons-row">
                                                 <td>
-                                                    <button type="button" class="btn btn_default btn_hover_red">ce</button>
+                                                    <button type="button" id="ce" class="clearBtn btn btn_default btn_hover_red">ce</button>
                                                 </td>
                                                 <td>
-                                                    <button type="button" class="btn btn_default btn_hover_red">c</button>
+                                                    <button type="button" id="c" class="clearBtn btn btn_default btn_hover_red">c</button>
                                                 </td>
                                                 <td>
-                                                    <button type="button" class="btn btn_default btn_hover_blue">/</button>
+                                                    <button type="button" value="Деление" class="operation btn btn_default btn_hover_blue">/</button>
                                                 </td>
                                                 <td>
-                                                    <button type="button" class="btn btn_default btn_hover_blue">*</button>
-                                                </td>
-                                            </tr>
-                                            <tr class="calc_buttons-row">
-                                                <td>
-                                                    <button type="button" class="btn btn_default ">7</button>
-                                                </td>
-                                                <td>
-                                                    <button type="button" class="btn btn_default ">8</button>
-                                                </td>
-                                                <td>
-                                                    <button type="button" class="btn btn_default ">9</button>
-                                                </td>
-                                                <td>
-                                                    <button type="button" class="btn btn_default btn_hover_blue">-</button>
+                                                    <button type="button" value="Умножение" class="operation btn btn_default btn_hover_blue">*</button>
                                                 </td>
                                             </tr>
                                             <tr class="calc_buttons-row">
                                                 <td>
-                                                    <button type="button" class="btn btn_default ">4</button>
+                                                    <button type="button" class="number btn btn_default ">7</button>
                                                 </td>
                                                 <td>
-                                                    <button type="button"class="btn btn_default ">5</button>
+                                                    <button type="button" class="number btn btn_default ">8</button>
                                                 </td>
                                                 <td>
-                                                    <button type="button" class="btn btn_default ">6</button>
+                                                    <button type="button" class="number btn btn_default ">9</button>
                                                 </td>
                                                 <td>
-                                                    <button type="button" class="btn btn_default btn_hover_blue">+</button>
+                                                    <button type="button" value="Вычитание" class="operation btn btn_default btn_hover_blue">-</button>
                                                 </td>
                                             </tr>
                                             <tr class="calc_buttons-row">
                                                 <td>
-                                                    <button type="button" class="btn btn_default ">1</button>
+                                                    <button type="button" class="number btn btn_default ">4</button>
                                                 </td>
                                                 <td>
-                                                    <button type="button" class="btn btn_default ">2</button>
+                                                    <button type="button"class="number btn btn_default ">5</button>
                                                 </td>
                                                 <td>
-                                                    <button type="button" class="btn btn_default ">3</button>
+                                                    <button type="button" class="number btn btn_default ">6</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" value="Сложение" class="operation btn btn_default btn_hover_blue">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="calc_buttons-row">
+                                                <td>
+                                                    <button type="button" class="number btn btn_default ">1</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="number btn btn_default ">2</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="number btn btn_default ">3</button>
                                                 </td>
                                                 <td rowspan="2">
-                                                    <button type="button" id="equal" class="btn btn_default btn_hover_blue">=</button>
+                                                    <button type="button" value="Результат" id="equal" class="operation btn btn_default btn_hover_blue">=</button>
                                                 </td>
                                             </tr>
                                             <tr class="calc_buttons-row">
                                                 <td colspan="2">
-                                                    <button type="button" id="n0" class="btn btn_default btn_long">0</button>
+                                                    <button type="button" id="n0" class="number btn btn_default btn_long">0</button>
                                                 </td>
                                                 <td>
-                                                    <button type="button" class="btn btn_default ">.</button>
+                                                    <button type="button" class="btn btn_default " id="decimal">.</button>
                                                 </td>
                                             </tr>
                                         </table>
@@ -100,9 +101,13 @@
                             </h1>
                             <div class="about">
                                 <div class="about_btn">
-                                    <a href="#" class="about_btn-link">
+                                    <a href="#" id="howWorkBtn" class="about_btn-link">
                                     Как это работает?
                                 </a>
+                                </div>
+                                <div>
+                                    <ul id="operationsList">
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -111,5 +116,6 @@
             </div>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
